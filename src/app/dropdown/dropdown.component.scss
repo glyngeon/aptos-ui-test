@@ -1,0 +1,105 @@
+.dropdownbtn {
+    background-color: #fff;
+    color: #464a4c;
+    padding: 6px;
+    font-size: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown i.icon {
+    color: #464a4c;
+    float: right;
+    margin-right: 8px;
+    font-size: 1.5em;
+}
+
+.dropdownbtn:hover,
+.dropdownbtn:focus {
+    background-color: inherit;
+}
+
+.dropdownbtn .displayText {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    .label-wrapper {
+        margin: 0 0 0.5rem;
+    }
+}
+
+.dropdown #dropdown-btn {
+    display: block;
+    width: 100% !important;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    width: 100%;
+    box-shadow: 3px 2px 4px 0px rgba(57, 63, 70, 0.08);
+    z-index: 1000;
+    margin: 0.3rem 0;
+    font-size: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    max-height: 280px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.dropdown-content a {
+    z-index: 1000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #e6f6fc;
+}
+
+// Show the dropdown menu 
+.show {
+    display: block;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f0f2f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4d607b;
+    ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

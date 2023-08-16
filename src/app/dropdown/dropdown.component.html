@@ -1,0 +1,14 @@
+<div class="dropdown" (mouseenter)="state = 0" (mouseleave)="state = 1">
+    <div class="label-wrapper">
+        <label for="dropdown-btn" *ngIf="label">{{ label }}</label>
+    </div>
+    <button [disabled]="isDisabled" id="dropdown-btn" type="button" class="dropdownbtn" (click)="showMenu = !showMenu">
+        <div class="displayText">
+            {{ selectedItem?.DisplayValue || placeholder }}
+        </div>
+        <i class="icon fa" [ngClass]="!showMenu ? 'fa-angle-down' : 'fa-angle-up'"></i>
+    </button>
+    <div id="dropdown" class="dropdown-content" [ngClass]="{'show':showMenu}">
+        <a *ngFor="let item of data" (click)="valueChange(item)">{{ item?.DisplayValue }}</a>
+    </div>
+</div>
