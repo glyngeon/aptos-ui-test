@@ -1,0 +1,13 @@
+<h1>Aptos UI Test</h1>
+<div class="container">
+  <h4>(Reusable and Custom dropdown :)</h4>
+    <div class="default">
+      <dropdown
+        [data]="dataList"
+        [labelText]="'Custom Dropdown'"
+        [placeholder]="'Select an option'"
+        (change)="onSelection($event)"
+      ></dropdown>
+    </div>
+</div>
+
